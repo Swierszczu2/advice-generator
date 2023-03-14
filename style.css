@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 50px auto;
+  height: 100vh;
+  font-family: Manrope;
+  background-color: hsl(218, 23%, 16%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: hsl(217, 19%, 24%);
+  width: 90%;
+  border-radius: 10px;
+  padding: 25px;
+  text-align: center;
+  position: relative;
+}
+
+.dice {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-image: url(./images/icon-dice.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: hsl(150, 100%, 66%);
+  cursor: pointer;
+}
+.dice:hover {
+  box-shadow: 0 0 20px 0px hsl(150, 100%, 66%);
+}
+
+.advice-number {
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 4px;
+  font-size: 11px;
+  padding: 25px;
+}
+
+.advice {
+  font-size: 28px;
+  color: hsl(193, 38%, 86%);
+}
+
+.divider {
+  margin-top: 25px;
+  background-image: url(./images/pattern-divider-mobile.svg);
+  background-repeat: no-repeat;
+  height: 30px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 376px) {
+  .container {
+    width: 600px;
+    position: relative;
+  }
+  .advice-number {
+    font-size: 0.9rem;
+  }
+  .divider {
+    background-image: url(./images/pattern-divider-desktop.svg);
+    width: 100%;
+    background-position: center;
+  }
+}
